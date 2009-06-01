@@ -1,0 +1,8 @@
+bin/tem_multi_proxy
+CHANGELOG
+lib/tem_multi_proxy/manager.rb
+lib/tem_multi_proxy.rb
+LICENSE
+Rakefile
+README
+Manifest

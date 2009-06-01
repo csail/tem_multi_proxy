@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+require 'rubygems'
+require 'tem_multi_proxy'
+
+manager = Tem::MultiProxy::Manager.new
+manager.management_loop

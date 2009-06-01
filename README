@@ -1,0 +1,9 @@
+tem_multi_proxy is a tool that automatically creates a TEM proxy for each PC/SC
+reader on the system. The tool reacts appropriately to PC/SC events like
+readers being added or cards being inserted. It also re-spawns proxy processes
+if they die.
+
+The utility's intended use is for TEM clusters (systems with multiple TEMs
+attached), where the TEM's auto-configuration mechanism wouldn't allow access to
+all the TEMs.
+ 
