@@ -1,1 +1,3 @@
+v0.2. The multi_proxy can respond to remote queries on connected TEMs.
+
 v0.1. Initial release. Standalone manager works.

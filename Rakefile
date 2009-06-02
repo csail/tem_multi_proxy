@@ -8,7 +8,7 @@ Echoe.new('tem_multi_proxy') do |p|
   
   p.author = 'Victor Costan'
   p.email = 'victor@costan.us'
-  p.summary = 'Starts TEM proxies for all the physically attached TEMs.'
+  p.summary = 'Maintains TEM proxies for all the physically attached TEMs.'
   p.url = 'http://tem.rubyforge.org'
   p.dependencies = ['rbtree >=0.2.1',
                     'smartcard >=0.3.1',

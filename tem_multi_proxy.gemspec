@@ -2,23 +2,22 @@
 
 Gem::Specification.new do |s|
   s.name = %q{tem_multi_proxy}
-  s.version = "0.1"
+  s.version = "0.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 1.2") if s.respond_to? :required_rubygems_version=
   s.authors = ["Victor Costan"]
-  s.date = %q{2009-06-01}
-  s.default_executable = %q{tem_multi_proxy}
-  s.description = %q{Starts TEM proxies for all the physically attached TEMs.}
+  s.date = %q{2009-06-02}
+  s.description = %q{Maintains TEM proxies for all the physically attached TEMs.}
   s.email = %q{victor@costan.us}
-  s.executables = ["tem_multi_proxy"]
-  s.extra_rdoc_files = ["bin/tem_multi_proxy", "CHANGELOG", "lib/tem_multi_proxy/manager.rb", "lib/tem_multi_proxy.rb", "LICENSE", "README"]
-  s.files = ["bin/tem_multi_proxy", "CHANGELOG", "lib/tem_multi_proxy/manager.rb", "lib/tem_multi_proxy.rb", "LICENSE", "Rakefile", "README", "Manifest", "tem_multi_proxy.gemspec"]
+  s.executables = ["tem_multi_proxy", "tem_multi_proxy_query"]
+  s.extra_rdoc_files = ["bin/tem_multi_proxy", "bin/tem_multi_proxy_query", "CHANGELOG", "lib/tem_multi_proxy/client.rb", "lib/tem_multi_proxy/manager.rb", "lib/tem_multi_proxy/server.rb", "lib/tem_multi_proxy.rb", "LICENSE", "README"]
+  s.files = ["bin/tem_multi_proxy", "bin/tem_multi_proxy_query", "CHANGELOG", "lib/tem_multi_proxy/client.rb", "lib/tem_multi_proxy/manager.rb", "lib/tem_multi_proxy/server.rb", "lib/tem_multi_proxy.rb", "LICENSE", "Manifest", "Rakefile", "README", "tem_multi_proxy.gemspec"]
   s.homepage = %q{http://tem.rubyforge.org}
   s.rdoc_options = ["--line-numbers", "--inline-source", "--title", "Tem_multi_proxy", "--main", "README"]
   s.require_paths = ["lib"]
   s.rubyforge_project = %q{tem}
   s.rubygems_version = %q{1.3.4}
-  s.summary = %q{Starts TEM proxies for all the physically attached TEMs.}
+  s.summary = %q{Maintains TEM proxies for all the physically attached TEMs.}
 
   if s.respond_to? :specification_version then
     current_version = Gem::Specification::CURRENT_SPECIFICATION_VERSION

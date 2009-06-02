@@ -1,8 +1,11 @@
 bin/tem_multi_proxy
+bin/tem_multi_proxy_query
 CHANGELOG
+lib/tem_multi_proxy/client.rb
 lib/tem_multi_proxy/manager.rb
+lib/tem_multi_proxy/server.rb
 lib/tem_multi_proxy.rb
 LICENSE
+Manifest
 Rakefile
 README
-Manifest

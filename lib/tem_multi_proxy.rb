@@ -1,5 +1,6 @@
 # Gem requirements.
 require 'rubygems'
+require 'eventmachine'
 require 'smartcard'
 require 'tem_ruby'
 require 'zerg_support'
@@ -9,4 +10,6 @@ module Tem::MultiProxy
 end
 
 # The files making up the gem.
+require 'tem_multi_proxy/client.rb'
 require 'tem_multi_proxy/manager.rb'
+require 'tem_multi_proxy/server.rb'

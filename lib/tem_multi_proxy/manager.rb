@@ -15,6 +15,11 @@ class Manager
     (9001...9050).each { |port| @free_ports[port] = true }
     @logger = Logger.new STDERR
   end
+  
+  # Returns an array of ports that TEMs can listen to.
+  def tem_ports
+    @proxy_ports.values.sort
+  end
 
   # Polls each smartcard reader to see if there's a card present.
   def poll_readers

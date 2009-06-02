@@ -3,5 +3,5 @@
 require 'rubygems'
 require 'tem_multi_proxy'
 
-manager = Tem::MultiProxy::Manager.new
-manager.management_loop
+server = Tem::MultiProxy::Server.new(ARGV[0] && ARGV[0].to_i)
+server.serving_loop
