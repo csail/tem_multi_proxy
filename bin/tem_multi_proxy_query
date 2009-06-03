@@ -6,4 +6,8 @@ require 'tem_multi_proxy'
 server_addr = ARGV[0] || 'localhost'
 print "Querying #{server_addr}...\n"
 tem_transports = Tem::MultiProxy::Client.query_tems server_addr
-print tem_transports.inspect, "\n"
+if tem_transports
+  print tem_transports.inspect, "\n"
+else
+  print "Unable to connect to tem_multi_proxy server\n"
+end

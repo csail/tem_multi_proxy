@@ -2,11 +2,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{tem_multi_proxy}
-  s.version = "0.2"
+  s.version = "0.2.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 1.2") if s.respond_to? :required_rubygems_version=
   s.authors = ["Victor Costan"]
-  s.date = %q{2009-06-02}
+  s.date = %q{2009-06-03}
   s.description = %q{Maintains TEM proxies for all the physically attached TEMs.}
   s.email = %q{victor@costan.us}
   s.executables = ["tem_multi_proxy", "tem_multi_proxy_query"]

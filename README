@@ -7,3 +7,8 @@ The utility's intended use is for TEM clusters (systems with multiple TEMs
 attached), where the TEM's auto-configuration mechanism wouldn't allow access to
 all the TEMs.
  
+Note on testing: since the proxy is entirely event-driven, testing it would be
+a pain, or I don't know how to do it easily yet. Therefore I'm not going to
+write complex tests for 200 lines of code that I don't expect to change ever
+again. Contributions are welcome though :)
+  

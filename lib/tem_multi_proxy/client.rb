@@ -13,6 +13,8 @@ class Client
     @client_socket = SocketFactory.socket :out_addr => server_addr,
                                           :out_port => Server::DEFAULT_PORT,
                                           :no_delay => true
+    return nil unless @client_socket
+    
     @client_socket.extend Adapter
     @client_socket.send_object :query => 'tem_ports'
     tem_ports = @client_socket.recv_object
