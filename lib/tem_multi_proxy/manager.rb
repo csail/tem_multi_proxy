@@ -23,7 +23,14 @@ class Manager
 
   # Polls each smartcard reader to see if there's a card present.
   def poll_readers
-    readers = @pcsc_context.list_readers(nil).map { |name| { :name => name }}
+    begin
+      readers = @pcsc_context.list_readers(nil).map { |name| { :name => name }}
+    rescue
+      # Linux PC/SC raises an exception if no readers are connected.
+      readers = []
+    end        
+    return readers if readers.empty?
+    
     reader_states = Smartcard::PCSC::ReaderStates.new readers.length
     readers.each_with_index do |reader, i|
       reader_states.set_reader_name_of!(i, reader[:name])
