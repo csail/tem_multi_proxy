@@ -1,3 +1,5 @@
+v0.2.3. Removed unused dependency on eventmachine.
+
 v0.2.2. Fixed Linux behavior when no reader is connected.
 
 v0.2.1. Client returns nil instead of exception when it fails to connect to the server.  

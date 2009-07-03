@@ -1,6 +1,5 @@
 # Gem requirements.
 require 'rubygems'
-require 'eventmachine'
 require 'smartcard'
 require 'tem_ruby'
 require 'zerg_support'
