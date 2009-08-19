@@ -5,7 +5,7 @@ class Client
   Protocol = Zerg::Support::Protocols::ObjectProtocol
   Adapter = Zerg::Support::Sockets::ProtocolAdapter.adapter_module Protocol 
   SocketFactory = Zerg::Support::SocketFactory
-  JcopRemoteTransport = Tem::Transport::JcopRemoteTransport 
+  JcopRemoteTransport = Smartcard::Iso::JcopRemoteTransport 
   
   # Queries a multi_proxy for its TEMs, and returns them as transport
   # configurations suitable for Tem::Tem#new.

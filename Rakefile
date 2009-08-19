@@ -11,8 +11,7 @@ Echoe.new('tem_multi_proxy') do |p|
   p.summary = 'Maintains TEM proxies for all the physically attached TEMs.'
   p.url = 'http://tem.rubyforge.org'
   p.dependencies = ['rbtree >=0.2.1',
-                    'smartcard >=0.3.1',
-                    'tem_ruby >=0.11',
+                    'smartcard >=0.4.1',
                     'zerg_support >=0.0.9']
   
   p.need_tar_gz = !Platform.windows?

@@ -1,3 +1,5 @@
+v0.2.4. Updated to API for smartcard 0.4.0.
+
 v0.2.3. Removed unused dependency on eventmachine.
 
 v0.2.2. Fixed Linux behavior when no reader is connected.
