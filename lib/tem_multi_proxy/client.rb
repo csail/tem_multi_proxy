@@ -1,6 +1,19 @@
+# RPC client for a tem_multi_proxy server.
+#
+# Author:: Victor Costan
+# Copyright:: Copyright (C) 2009 Massachusetts Institute of Technology
+# License:: MIT
+
 # :nodoc: namespace
 module Tem::MultiProxy
-  
+
+
+# RPC client for a tem_multi_proxy server.
+#
+# The client supports the RPC server's interface for obtaining administrative
+# information about the cards connected to it. To communicate with the
+# smart-cards, use the transports in the smartcard gem (see the Smartcard::Iso
+# namespace).
 class Client
   Protocol = Zerg::Support::Protocols::ObjectProtocol
   Adapter = Zerg::Support::Sockets::ProtocolAdapter.adapter_module Protocol 
@@ -27,6 +40,6 @@ class Client
         :opts => { :host => server_host, :port => port } }
     end
   end  
-end
+end  # class Tem::MultiProxy::Client
 
 end  # namespace Tem::MultiProxy

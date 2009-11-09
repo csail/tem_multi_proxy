@@ -1,3 +1,9 @@
+# RPC client for a tem_multi_proxy server.
+#
+# Author:: Victor Costan
+# Copyright:: Copyright (C) 2009 Massachusetts Institute of Technology
+# License:: MIT
+
 require 'logger'
 require 'rbtree'
 require 'set'

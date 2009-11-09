@@ -1,3 +1,5 @@
+v0.2.5. Added forgotten dependency on tem_ruby, updated documentation.
+
 v0.2.4. Updated to API for smartcard 0.4.0.
 
 v0.2.3. Removed unused dependency on eventmachine.

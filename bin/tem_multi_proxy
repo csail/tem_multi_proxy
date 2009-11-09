@@ -1,4 +1,15 @@
 #!/usr/bin/env ruby
+#
+# Launcher for a tem_multi_proxy server.
+#
+# Author:: Victor Costan
+# Copyright:: Copyright (C) 2009 Massachusetts Institute of Technology
+# License:: MIT
+#
+# Usage: tem_multi_proxy [rpc port]
+# The default RPC port is 9000. The RPC can be used with the tem_multi_proxy
+# client library to obtain information about the cards connected to the system
+# running tem_multi_proxy.
 
 require 'rubygems'
 require 'tem_multi_proxy'

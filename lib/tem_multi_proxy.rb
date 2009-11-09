@@ -1,3 +1,9 @@
+# Main include file for the tem_multi_proxy Rubygem.
+#
+# Author:: Victor Costan
+# Copyright:: Copyright (C) 2009 Massachusetts Institute of Technology
+# License:: MIT
+
 # Gem requirements.
 require 'rubygems'
 require 'smartcard'

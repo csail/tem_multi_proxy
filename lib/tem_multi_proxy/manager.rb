@@ -1,3 +1,9 @@
+# Manages the mapping between live TEMs and proxy processes.
+#
+# Author:: Victor Costan
+# Copyright:: Copyright (C) 2009 Massachusetts Institute of Technology
+# License:: MIT
+
 require 'logger'
 require 'rbtree'
 require 'set'
@@ -6,6 +12,18 @@ require 'set'
 # :nodoc: namespace
 module Tem::MultiProxy  
 
+
+# Manages the mapping between live smart-cards and proxy processes.
+#
+# This class is intended to live as a singleton instance, though that is not
+# enforced. The instance does its work in a dedicated thread which spins inside
+# the management_loop method. Information about the live smartcards is returned
+# by the tem_ports method.
+#
+# While the management thread is spinning, it actively maintains a one-to-one
+# mapping between connected smart-cards and proxy processes, by spawning new
+# processes when cards are connected, and killing processes when cards are
+# disconnected.
 class Manager
   def initialize
     @pcsc_context = Smartcard::PCSC::Context.new(Smartcard::PCSC::SCOPE_SYSTEM)
@@ -139,6 +157,6 @@ class Manager
       Kernel.sleep 1
     end
   end
-end
+end  # class Tem::MultiProxy::Manager
 
 end  # namespace Tem::MultiProxy

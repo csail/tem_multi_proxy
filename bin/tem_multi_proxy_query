@@ -1,4 +1,14 @@
 #!/usr/bin/env ruby
+#
+# Queries a tem_multi_proxy server about the smartcards connected to it via RPC.
+#
+# Author:: Victor Costan
+# Copyright:: Copyright (C) 2009 Massachusetts Institute of Technology
+# License:: MIT
+#
+# Usage: tem_multi_proxy_query [host[:port]]
+# The host:port should point to the RPC port of the tem_multi_proxy server.
+# The default host is localhost, and the default port is 9000.
 
 require 'rubygems'
 require 'tem_multi_proxy'
