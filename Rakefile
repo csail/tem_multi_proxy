@@ -20,6 +20,7 @@ Echoe.new('tem_multi_proxy') do |p|
                     'smartcard >=0.4.6',
                     'tem_ruby >=0.11.7',
                     'zerg_support >=0.0.9']
+  p.development_dependencies = ['echoe >=3.2']
   
   p.need_tar_gz = !Gem.win_platform?
   p.need_zip = !Gem.win_platform?

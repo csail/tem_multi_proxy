@@ -2,11 +2,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{tem_multi_proxy}
-  s.version = "0.2.6"
+  s.version = "0.2.7"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 1.2") if s.respond_to? :required_rubygems_version=
   s.authors = ["Victor Costan"]
-  s.date = %q{2009-11-09}
+  s.date = %q{2009-11-10}
   s.description = %q{Maintains TEM proxies for all the physically attached TEMs.}
   s.email = %q{victor@costan.us}
   s.executables = ["tem_multi_proxy", "tem_multi_proxy_query"]
@@ -28,16 +28,19 @@ Gem::Specification.new do |s|
       s.add_runtime_dependency(%q<smartcard>, [">= 0.4.6"])
       s.add_runtime_dependency(%q<tem_ruby>, [">= 0.11.7"])
       s.add_runtime_dependency(%q<zerg_support>, [">= 0.0.9"])
+      s.add_development_dependency(%q<echoe>, [">= 3.2"])
     else
       s.add_dependency(%q<rbtree>, [">= 0.2.1"])
       s.add_dependency(%q<smartcard>, [">= 0.4.6"])
       s.add_dependency(%q<tem_ruby>, [">= 0.11.7"])
       s.add_dependency(%q<zerg_support>, [">= 0.0.9"])
+      s.add_dependency(%q<echoe>, [">= 3.2"])
     end
   else
     s.add_dependency(%q<rbtree>, [">= 0.2.1"])
     s.add_dependency(%q<smartcard>, [">= 0.4.6"])
     s.add_dependency(%q<tem_ruby>, [">= 0.11.7"])
     s.add_dependency(%q<zerg_support>, [">= 0.0.9"])
+    s.add_dependency(%q<echoe>, [">= 3.2"])
   end
 end
