@@ -1,4 +1,4 @@
-# RPC client for a tem_multi_proxy server.
+# RPC server for a tem_multi_proxy server.
 #
 # Author:: Victor Costan
 # Copyright:: Copyright (C) 2009 Massachusetts Institute of Technology
@@ -11,7 +11,12 @@ require 'set'
 
 # :nodoc: namespace
 module Tem::MultiProxy
-  
+ 
+# RPC server for a tem_multi_proxy server.
+#
+# The server's RPC interface provides administrative information about the cards
+# connected to it. To communicate with the smart-cards, use the transports in
+# the smartcard gem (see the Smartcard::Iso namespace).
 class Server
   DEFAULT_PORT = 9051
 

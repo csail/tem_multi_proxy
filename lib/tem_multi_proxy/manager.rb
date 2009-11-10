@@ -90,7 +90,7 @@ class Manager
   def spawn_proxy_for_reader(reader)
     proxy_port = alloc_proxy_port reader[:name]
     proxy_pid = Zerg::Support::Process.spawn 'tem_proxy', [proxy_port.to_s],
-        :env => {'TEM_PORT' => reader[:name], 'DEBUG' => 'no'},
+        :env => {'SCARD_PORT' => reader[:name], 'DEBUG' => 'no'},
         :pgroup => true
     @proxy_pids[reader[:name]] = proxy_pid
   end
